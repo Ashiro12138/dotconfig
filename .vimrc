@@ -20,9 +20,13 @@ set nu rnu
 set background=dark
 colorscheme gruvbox
 syntax on
-"Paste in visual mode without copying
+
+" Do stuff without without copying
 xnoremap p pgvy
 xnoremap P Pgvy
+noremap x "_x
+noremap X "_x
+noremap <Del> "_x
 
 " Relative line number toggling between files
 augroup numbertoggle
