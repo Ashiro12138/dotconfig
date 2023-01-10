@@ -56,3 +56,6 @@ nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
 " Format
 noremap <Leader>r :Autoformat<CR>
+
+" Remap ESC
+inoremap jk <Esc>
