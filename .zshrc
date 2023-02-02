@@ -17,6 +17,8 @@ alias gpp='git pull'
 alias gcc='git checkout'
 alias gcb='git checkout -b'
 alias gbd='git branch -D'
+alias gcan='gc --amend --no-edit'
+
 
 function gdone() {
     echo "Good work! Running done pipeline..."
