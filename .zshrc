@@ -44,3 +44,8 @@ function gdone() {
 # General shortcuts
 alias ll='ls -la'
 alias less='view'
+
+# Cursed
+alias sz='source ~/.zshrc'
+alias vz='vim ~/.zshrc'
+
