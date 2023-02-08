@@ -12,10 +12,13 @@ Plug 'zivyangll/git-blame.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-autoformat/vim-autoformat'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 " House keeping
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab smartindent
+set scrolloff=2
 set nu rnu
 set background=dark
 colorscheme gruvbox
@@ -59,3 +62,8 @@ noremap <Leader>r :Autoformat<CR>
 
 " Remap ESC
 inoremap jk <Esc>
+
+" Fuzzy finder ignore node_modules
+let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
+let $FZF_DEFAULT_OPTS='--layout=reverse --border'
+
