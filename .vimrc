@@ -67,3 +67,8 @@ inoremap jk <Esc>
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 let $FZF_DEFAULT_OPTS='--layout=reverse --border'
 
+" Add numbered jumps to jumplist
+nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
+nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
+
+
