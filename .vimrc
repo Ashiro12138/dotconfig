@@ -29,6 +29,8 @@ xnoremap p pgvy
 xnoremap P Pgvy
 noremap x "_x
 noremap X "_x
+noremap s "_s
+noremap S "_S
 noremap <Del> "_x
 
 " Relative line number toggling between files
