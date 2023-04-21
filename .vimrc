@@ -23,6 +23,7 @@ set nu rnu
 set background=dark
 colorscheme gruvbox
 syntax on
+let mapleader = " "
 
 " Do stuff without without copying
 xnoremap p pgvy
