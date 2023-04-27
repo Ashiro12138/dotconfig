@@ -74,4 +74,9 @@ let $FZF_DEFAULT_OPTS='--layout=reverse --border'
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
+" Add smartcase to search
+" All lowercase search will be case insensitive
+" Any search containing uppercase will be case sensitive
+set ignorecase
+set smartcase
 
