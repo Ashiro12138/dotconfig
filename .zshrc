@@ -19,6 +19,8 @@ alias gcc='git checkout'
 alias gcb='git checkout -b'
 alias gbd='git branch -D'
 alias gcan='gc --amend --no-edit'
+alias grim='git rebase -i origin/master'
+alias gfr='gf && grim'
 
 
 function gdone() {
