@@ -25,7 +25,7 @@ colorscheme gruvbox
 syntax on
 let mapleader = " "
 
-" Do stuff without without copying
+" Do stuff without copying
 xnoremap p pgvy
 xnoremap P Pgvy
 noremap x "_x
@@ -33,6 +33,10 @@ noremap X "_x
 noremap s "_s
 noremap S "_S
 noremap <Del> "_x
+
+" Leader key mappings
+nnoremap <Leader>w :w
+nnoremap <Leader>q :q
 
 " Relative line number toggling between files
 augroup numbertoggle
@@ -71,8 +75,9 @@ let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -
 let $FZF_DEFAULT_OPTS='--layout=reverse --border'
 
 " Add numbered jumps to jumplist
-nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
-nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
+" Experiencing bugs in webstorm, can't move cursor after executing commands
+" nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
+" nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
 " Add smartcase to search
 " All lowercase search will be case insensitive
