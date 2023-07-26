@@ -35,8 +35,8 @@ noremap S "_S
 noremap <Del> "_x
 
 " Leader key mappings
-nnoremap <Leader>w :w
-nnoremap <Leader>q :q
+nnoremap <Leader>w :w<cr>
+nnoremap <Leader>q :q<cr>
 
 " Relative line number toggling between files
 augroup numbertoggle

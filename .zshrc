@@ -20,6 +20,8 @@ alias gcb='git checkout -b'
 alias gbd='git branch -D'
 alias gcan='gc --amend --no-edit'
 alias grim='git rebase -i origin/master'
+alias grc='git rebase --continue'
+alias grc='git rebase --abort'
 alias gfr='gf && grim'
 
 
@@ -51,4 +53,11 @@ alias ..='cd ..'
 # Cursed
 alias sz='source ~/.zshrc'
 alias vz='vim ~/.zshrc'
+
+# Kill processes on port
+function kp() {
+    echo "Killing processes on port"
+    echo "$(lsof -i:$1)"
+    kill $(lsof -t -i:$1)
+}
 
